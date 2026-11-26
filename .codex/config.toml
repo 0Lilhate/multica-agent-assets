@@ -1,0 +1,15 @@
+# Codex MCP examples for this asset checkout. Apply selected entries to each trusted target project separately.
+[mcp_servers."playwright"]
+command = "npx"
+args = ["-y", "@playwright/mcp", "--browser", "chrome"]
+startup_timeout_sec = 60
+
+[mcp_servers."sequential-thinking"]
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+startup_timeout_sec = 60
+
+[mcp_servers."context7"]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@latest"]
+startup_timeout_sec = 60
