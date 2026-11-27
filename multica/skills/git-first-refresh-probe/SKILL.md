@@ -7,4 +7,4 @@ description: Disposable workspace skill for checking manual GitHub import and re
 
 This skill is only an acceptance fixture. It contains no instructions to edit repositories, workspace settings, or secrets.
 
-Version marker: `v1`. The supporting marker is in `references/probe.md`.
+Version marker: `v2`. The supporting marker is in `references/probe.md`.
