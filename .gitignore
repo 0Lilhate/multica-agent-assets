@@ -6,3 +6,4 @@ local-secrets/
 backups/
 *.log
 __pycache__/
+.idea/

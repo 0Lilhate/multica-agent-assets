@@ -14,16 +14,18 @@
 
 - [x] Create the independent local Git repository with existing skills and license/provenance files.
 - [x] Add Codex helper profiles, non-secret MCP examples, and manual update instructions.
-- [ ] Choose a remote owner and repository, push the reviewed commit, and verify a clean clone.
+- [x] Create the empty public GitHub repository `0Lilhate/multica-agent-assets` and set the local `origin` URL.
+- [x] Publish the existing local baseline commit to public `main` with the owner-approved visible email.
+- [ ] Review and merge the candidate asset PR, then verify an unauthenticated clean clone of its merged commit.
 
 ### 2. Prove the intended native path
 
-- [ ] On a disposable target, verify import/refresh of a skill from this repository's actual hosted URL, including a changed supporting file, preserved ID and agent assignment.
-- [ ] Install selected Codex assets into a trusted target project and verify project MCP registration and a real tool call.
+- [ ] On a separate B installation on the same Mac, import `multica/skills/git-first-refresh-probe/` at v1 from this repository's actual hosted URL, then review/merge v2 changes to both `SKILL.md` and `references/probe.md`; refresh and check preserved ID and agent assignment.
+- [x] Scope decision: direct Codex installation into another trusted project and its separate MCP tool call are outside Multica cutover acceptance; keep the helper assets available for optional use.
 - [ ] Create a Multica agent on a human-selected target runtime, apply a local MCP entry and verify a tool call without source board data.
 
 ### 3. Cut over the Compose project
 
-- [ ] Replace the old automatic UI-to-Git BRD with Git-authored/manual-refresh acceptance.
+- [ ] Keep the old automatic UI-to-Git BRD and acceptance report as historical evidence; update the new Git-first BRD and operator instructions for the narrower native path.
 - [ ] After a private backup and native-path proof, remove config-apply/config-export and backend sync patches without deleting existing volumes.
 - [ ] Update README and AGENTS.md, then run a fresh checkout validation and review the diff.
