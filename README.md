@@ -1,6 +1,6 @@
 # Multica agent assets
 
-Candidate Git source of truth for reviewed, non-secret skills and agent configuration, destined for the public [`0Lilhate/multica-agent-assets`](https://github.com/0Lilhate/multica-agent-assets) repository. This is a **separate repository** from the Compose installation. The current Compose repository remains active until the native path is accepted; do not run its old exporter and this Git-first workflow as two authors of the same setting.
+Reviewed public Git source for non-secret Multica workspace skills and agent/MCP examples. This is a **separate repository** from the Compose installation. The Compose installation switched to the native Git-first path on 27 November 2026: its official backend runs without the former UI exporter and startup apply services. Humans review and merge asset changes, then pull and manually import or refresh the selected workspace skills. Agent and MCP examples are applied separately through Multica UI/CLI.
 
 ## Contents
 
@@ -23,4 +23,4 @@ A fresh Multica installation imports selected workspace skills from the public G
 4. Create/update Multica agents through its UI/CLI after selecting a registered runtime on that installation. Configure Multica workspace MCP separately with `multica workspace mcp add/update --server-config-file` and bind it to the agent. Put any credential-bearing JSON in a local private file, never in this repository.
 5. Verify the target UI, assigned skill content and supporting files, runtime choice, and a real MCP tool call. Git pull alone does not perform steps 3–5. The Codex runtime used by this Multica agent still needs its local installation and login.
 
-The current Compose repository's automatic UI → Git → UI BRD and acceptance report remain historical evidence for the existing implementation. Use the separate Git-first BRD for the narrower native workflow and test it on a fresh installation before removing sync services or backend patches; preserve existing volumes.
+The Compose repository's automatic UI → Git → UI BRD and acceptance report are historical evidence for the previous implementation. Its Git-first BRD defines the narrower native workflow. The cutover was rehearsed on a restored copy and applied to the working installation with existing PostgreSQL/uploads volumes preserved; a second physical computer has not been tested.
